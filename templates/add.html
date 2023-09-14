@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% from 'bootstrap5/form.html' import render_form %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Add Book</title>
+    {% block styles %}
+    <!-- Load Bootstrap-Flask CSS here -->
+    {{ bootstrap.load_css() }}
+    {% endblock %}
+    <style>
+      body{
+      background-color: #333;
+      color: white;
+      }
+    </style>
+  </head>
+  <body>
+  <div class="container">
+  <div class="row"></div>
+  <div class="col-sm-12 col-md-8">
+    {{ render_form(form) }}
+  </div>
+  </div>
+  <div>
+  </body>
+</html>

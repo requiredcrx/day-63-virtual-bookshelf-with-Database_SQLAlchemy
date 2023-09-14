@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Rating</title>
+</head>
+<body>
+<p>Book name: {{form.book_name.data}}</p>
+<p>Current rating: {{form.rating.data}}</p>
+{% from "bootstrap/form.html" import render_form %}
+{{ form.edit }} {{form.edit_button}}
+
+</body>
+</html>
